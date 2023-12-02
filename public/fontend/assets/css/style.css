@@ -7737,6 +7737,13 @@ table.invoice-list.style-two
         padding: 0;
     }
 }
+.logo {
+    text-align: center;
+}
+.logo h2 {
+    color: black;
+    padding-top: 18px;
+}
 
 .header .logo {
     background-color: #fafafa;
