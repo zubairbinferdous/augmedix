@@ -6,32 +6,178 @@
 
     <div class="main-content">
         <div class="container-fluid">
-            <marquee width="50%" direction="right" height="100px">
-                <div class="increase">
-                    <div class="card-title d-flex align-items-end mb-2">
-                        <h2>90<sup>%</sup></h2>
-                        <p class="font-14">Increased</p>
+            <div class="row slider">
+                <div class="col-xl-2 col-md-12 col-sm-6">
+                    <!-- Card -->
+                    <div class="card area-chart-box mb-30">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div class="">
+                                    <h4 class="mb-1">Income</h4>
+                                    <p class="font-14 c3">Increase in Average</p>
+                                </div>
+                                <div class="">
+                                    <h2>50<sup>%</sup></h2>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="card-subtitle mb-2">Congratulation!</h3>
-                    <p class="font-16">You've finished all of your tasks for this week.</p>
+                    <!-- End Card -->
                 </div>
-                <div class="increase">
-                    <div class="card-title d-flex align-items-end mb-2">
-                        <h2>88<sup>%</sup></h2>
-                        <p class="font-14">Increased</p>
+
+                <div class="col-xl-2 col-md-12 col-sm-6">
+                    <!-- Card -->
+                    <div class="card area-chart-box mb-30">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div class="">
+                                    <h4 class="mb-1">Income</h4>
+                                    <p class="font-14 c3">Increase in Average</p>
+                                </div>
+                                <div class="">
+                                    <h2>50<sup>%</sup></h2>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="card-subtitle mb-2">Congratulation!</h3>
-                    <p class="font-16">You've finished all of your tasks for this week.</p>
+                    <!-- End Card -->
                 </div>
-                <div class="increase">
-                    <div class="card-title d-flex align-items-end mb-2">
-                        <h2>90<sup>%</sup></h2>
-                        <p class="font-14">Increased</p>
+
+                <div class="col-xl-2 col-md-12 col-sm-6">
+                    <!-- Card -->
+                    <div class="card area-chart-box mb-30">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div class="">
+                                    <h4 class="mb-1">Income</h4>
+                                    <p class="font-14 c3">Increase in Average</p>
+                                </div>
+                                <div class="">
+                                    <h2>50<sup>%</sup></h2>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="card-subtitle mb-2">Congratulation!</h3>
-                    <p class="font-16">You've finished all of your tasks for this week.</p>
+                    <!-- End Card -->
                 </div>
-            </marquee>
+
+
+                <div class="col-xl-2 col-md-12 col-sm-6">
+                    <!-- Card -->
+                    <div class="card area-chart-box mb-30">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div class="">
+                                    <h4 class="mb-1">Income</h4>
+                                    <p class="font-14 c3">Increase in Average</p>
+                                </div>
+                                <div class="">
+                                    <h2>50<sup>%</sup></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                </div>
+
+
+                <div class="col-xl-2 col-md-12 col-sm-6">
+                    <!-- Card -->
+                    <div class="card area-chart-box mb-30">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div class="">
+                                    <h4 class="mb-1">Income</h4>
+                                    <p class="font-14 c3">Increase in Average</p>
+                                </div>
+                                <div class="">
+                                    <h2>50<sup>%</sup></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                </div>
+
+
+                <div class="col-xl-2 col-md-12 col-sm-6">
+                    <!-- Card -->
+                    <div class="card area-chart-box mb-30">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div class="">
+                                    <h4 class="mb-1">Income</h4>
+                                    <p class="font-14 c3">Increase in Average</p>
+                                </div>
+                                <div class="">
+                                    <h2>50<sup>%</sup></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                </div>
+
+
+                <div class="col-xl-2 col-md-12 col-sm-6">
+                    <!-- Card -->
+                    <div class="card area-chart-box mb-30">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div class="">
+                                    <h4 class="mb-1">Income</h4>
+                                    <p class="font-14 c3">Increase in Average</p>
+                                </div>
+                                <div class="">
+                                    <h2>50<sup>%</sup></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                </div>
+
+
+                <div class="col-xl-2 col-md-12 col-sm-6">
+                    <!-- Card -->
+                    <div class="card area-chart-box mb-30">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div class="">
+                                    <h4 class="mb-1">Income</h4>
+                                    <p class="font-14 c3">Increase in Average</p>
+                                </div>
+                                <div class="">
+                                    <h2>50<sup>%</sup></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                </div>
+
+
+                <div class="col-xl-2 col-md-12 col-sm-6">
+                    <!-- Card -->
+                    <div class="card area-chart-box mb-30">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div class="">
+                                    <h4 class="mb-1">Income</h4>
+                                    <p class="font-14 c3">Increase in Average</p>
+                                </div>
+                                <div class="">
+                                    <h2>50<sup>%</sup></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                </div>
+
+
+
+            </div>
             <div class="row">
                 <div class="col-xl-4 col-md-8">
                     <!-- Card -->
@@ -55,7 +201,7 @@
                     <!-- End Card -->
                 </div>
 
-                <div class="col-xl-2 col-md-4 col-sm-6">
+                {{-- <div class="col-xl-2 col-md-4 col-sm-6">
                     <!-- Card -->
                     <div class="card area-chart-box mb-30">
                         <div class="card-body">
@@ -119,7 +265,7 @@
                         <div id="apex_area4-chart" class="chart"></div>
                     </div>
                     <!-- End Card -->
-                </div>
+                </div> --}}
             </div>
             {{-- 
             <div class="row">

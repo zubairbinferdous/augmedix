@@ -28,6 +28,15 @@
     <link rel="stylesheet" href="{{ asset('fontend/assets/plugins/apex/apexcharts.css') }}">
     <!-- ======= END BEGIN PAGE LEVEL PLUGINS STYLES ======= -->
 
+    {{-- slider-slick  --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- ======= MAIN STYLES ======= -->
     <link rel="stylesheet" href="{{ asset('fontend/assets/css/style.css') }}">
     <!-- ======= END MAIN STYLES ======= -->
@@ -396,7 +405,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="{{ route('watch') }}">
                             <i class="icofont-shopping-cart"></i>
                             <span class="link-title">Watchlist</span>
                         </a>
@@ -413,13 +422,13 @@
                         <!-- End Sub Menu -->
                     </li>
                     <li>
-                        <a href="pages/social-media.html">
+                        <a href="{{ route('portfolio') }}">
                             <i class="icofont-chart-histogram"></i>
                             <span class="link-title">Portfolio</span>
                         </a>
                     </li>
                     <li>
-                        <a href="pages/social-media.html">
+                        <a href="{{ route('discover') }}">
                             <i class="icofont-chart-histogram"></i>
                             <span class="link-title">Discover</span>
                         </a>
@@ -812,7 +821,6 @@
             <!-- End Sidebar Body -->
         </nav>
         <!-- End Sidebar -->
-
         <!-- Main Wrapper -->
         @yield('main_content')
 
@@ -833,6 +841,9 @@
     <!-- End wrapper -->
 
     <!-- ======= BEGIN GLOBAL MANDATORY SCRIPTS ======= -->
+    {{-- slick-slider  --}}
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <script src="{{ asset('fontend/assets/js/jquery.min.js') }}"></script>
     <script src="{{ asset('fontend/assets/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('fontend/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
@@ -843,6 +854,47 @@
     <script src="{{ asset('fontend/assets/plugins/apex/apexcharts.min.js') }}"></script>
     <script src="{{ asset('fontend/assets/plugins/apex/custom-apexcharts.js') }}"></script>
     <!-- ======= End BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS ======= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 500,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
 </body>
 
 </html>

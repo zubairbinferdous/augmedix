@@ -125,7 +125,7 @@
 
 
                             <div class="form-group mb-20">
-                                <label for="password" class="mb-2 font-14 bold">Password Confirmation</label>
+                                <label for="password" class="mb-2 font-14 bold">Confirm Password</label>
                                 <input class="theme-input-style" placeholder="********" id="password_confirmation"
                                     class="block mt-1 w-full" type="password" name="password_confirmation" required>
                                 <x-input-error :messages="$errors->get('password')" class="mt-2" />
