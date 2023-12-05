@@ -178,6 +178,36 @@
 
 
             </div>
+
+            <div class="row" style="height: 800px; padding:20px">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container" style="height:100%;width:100%">
+                    <div id="tradingview_8c43b" style="height:calc(100% - 32px);width:100%"></div>
+                    {{-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow"
+                            target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div> --}}
+                    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                    <script type="text/javascript">
+                        new TradingView.widget({
+                            "autosize": true,
+                            "symbol": "NASDAQ:AAPL",
+                            "interval": "1",
+                            "timezone": "Etc/UTC",
+                            "theme": "dark",
+                            "style": "1",
+                            "locale": "en",
+                            "enable_publishing": true,
+                            "withdateranges": true,
+                            "hide_side_toolbar": false,
+                            "allow_symbol_change": true,
+                            "details": true,
+                            "hotlist": true,
+                            "calendar": true,
+                            "container_id": "tradingview_8c43b"
+                        });
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
             <div class="row">
                 <div class="col-xl-4 col-md-8">
                     <!-- Card -->
