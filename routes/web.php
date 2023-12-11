@@ -25,6 +25,12 @@ Route::get('/portfolio', [HomeController::class, 'portfolio'])->name('portfolio'
 Route::get('/discover', [HomeController::class, 'discover'])->name('discover');
 
 
+// add tread 
+Route::get('/add-Tread', [HomeController::class, 'addTread'])->name('addTread');
+Route::post('/addData/store', [HomeController::class, 'addTreadDataStore'])->name('add.tread.store');
+
+
+
 
 
 // Auth install 

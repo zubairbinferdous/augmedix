@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AddTread;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -21,7 +23,9 @@ class HomeController extends Controller
     //portfolio page 
     public function portfolio()
     {
-        return view('frontend.portfolio');
+        $id = Auth::user()->id;
+        $data = AddTread::where('User_id', $id)->get();
+        return view('frontend.portfolio', compact('data'));
     }
 
     //portfolio page 
@@ -30,6 +34,27 @@ class HomeController extends Controller
         return view('frontend.discover');
     }
 
+    // view add tread page 
+
+    public function addTread()
+    {
+        return view('frontend.addTread');
+    }
+
+    // add tread data to DB
+
+    function addTreadDataStore(Request $request)
+    {
+        $id = Auth::user()->id;
+        AddTread::insert([
+            'TreadName' => $request->name_tread,
+            'Unite' => $request->unite_tread,
+            'Open' => $request->open_tread,
+            'User_id' => $id,
+        ]);
+
+        return redirect()->route('portfolio');
+    }
 
 
     // public function fetchDataFromApi()

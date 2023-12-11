@@ -211,7 +211,7 @@
             <div class="row">
                 <div class="col-xl-4 col-md-8">
                     <!-- Card -->
-                    <div class="card mb-30">
+                    {{-- <div class="card mb-30">
                         <div class="card-body">
                             <div class="d-flex align-items-center justify-content-between">
                                 <div class="increase">
@@ -227,7 +227,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <!-- End Card -->
                 </div>
 
