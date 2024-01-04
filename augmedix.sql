@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 03, 2023 at 08:10 PM
+-- Generation Time: Dec 11, 2023 at 02:55 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -20,6 +20,31 @@ SET time_zone = "+00:00";
 --
 -- Database: `augmedix`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `add_treads`
+--
+
+CREATE TABLE `add_treads` (
+  `id` bigint UNSIGNED NOT NULL,
+  `TreadName` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `Unite` int NOT NULL,
+  `Open` int NOT NULL,
+  `User_id` int NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `add_treads`
+--
+
+INSERT INTO `add_treads` (`id`, `TreadName`, `Unite`, `Open`, `User_id`, `created_at`, `updated_at`) VALUES
+(8, 'adda', 10, 100, 2, NULL, NULL),
+(10, 'BTC', 11, 230, 2, NULL, NULL),
+(11, 'BTC', 115, 214, 1, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -54,10 +79,11 @@ CREATE TABLE `migrations` (
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
-(5, '2014_10_12_000000_create_users_table', 1),
-(6, '2014_10_12_100000_create_password_reset_tokens_table', 1),
-(7, '2019_08_19_000000_create_failed_jobs_table', 1),
-(8, '2019_12_14_000001_create_personal_access_tokens_table', 1);
+(28, '2014_10_12_000000_create_users_table', 1),
+(29, '2014_10_12_100000_create_password_reset_tokens_table', 1),
+(30, '2019_08_19_000000_create_failed_jobs_table', 1),
+(31, '2019_12_14_000001_create_personal_access_tokens_table', 1),
+(32, '2023_12_11_123254_create_add_treads_table', 1);
 
 -- --------------------------------------------------------
 
@@ -113,11 +139,18 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `role`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'John doy ', 'user@gmail.com', NULL, '$2y$12$deS4DdodyyXQfyJA.adGpupk7CR0m.OqmqzsJG7wTPGGQTQllTSAO', 'user', NULL, '2023-12-03 12:47:43', '2023-12-03 12:47:43');
+(1, 'john roy', 'johnroy@gmail.com', NULL, '$2y$12$ZBYLO9s4NxaMkiLSTx2gz.LvGKcSGbGajkjjoACkQzjses/JClESi', 'user', NULL, '2023-12-11 07:35:25', '2023-12-11 07:35:25'),
+(2, 'zubair bin ferdous', 'zubairbinf@gmail.com', NULL, '$2y$12$pBIjYycvW9pWW7dJcxY8TeM73loTnvFY9Uc1mFwnl.pfr5064vwzO', 'user', NULL, '2023-12-11 07:36:46', '2023-12-11 07:36:46');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `add_treads`
+--
+ALTER TABLE `add_treads`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `failed_jobs`
@@ -158,6 +191,12 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `add_treads`
+--
+ALTER TABLE `add_treads`
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
 -- AUTO_INCREMENT for table `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
@@ -167,7 +206,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
